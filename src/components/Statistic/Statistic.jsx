@@ -24,9 +24,7 @@ export const Statistic = ({
         <Total>Total: {total()}</Total>
       </li>
       <li>
-        <Percentage>
-          ListElStyleositive feedBack: {positivePercentage()}
-        </Percentage>
+        <Percentage>Positive feedBack: {positivePercentage()}%</Percentage>
       </li>
     </Box>
   );
