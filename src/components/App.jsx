@@ -40,7 +40,10 @@ export class App extends Component {
     return (
       <>
         <Section title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedback={handleFeedbackClick} />
+          <FeedbackOptions
+            options={['good', 'neutral', 'bad']}
+            onLeaveFeedback={handleFeedbackClick}
+          />
         </Section>
         <Section title="Statistics">
           {countTotalFeedback() ? (
