@@ -5,9 +5,9 @@ import { Button } from './FeedbackOptions.styled';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <Box as="ul" display="flex" gridGap={4}>
-      {options.map((option, idx) => {
+      {options.map(option => {
         return (
-          <li key={idx}>
+          <li key={option}>
             <Button
               onClick={() => {
                 onLeaveFeedback(option);
@@ -24,4 +24,5 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
 };
